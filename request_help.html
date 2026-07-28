@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}
+Request Help
+{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+<h2 class="text-center">Disaster Help Request</h2>
+
+<form method="POST">
+
+<div class="mb-3">
+<label>Name</label>
+<input type="text" class="form-control" name="name">
+</div>
+
+<div class="mb-3">
+<label>Location</label>
+<input type="text" class="form-control" name="location">
+</div>
+
+<div class="mb-3">
+<label>Problem</label>
+<textarea class="form-control" name="problem"></textarea>
+</div>
+
+<button class="btn btn-danger">
+Submit Request
+</button>
+
+</form>
+
+</div>
+
+{% endblock %}

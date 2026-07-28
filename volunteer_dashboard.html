@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}
+Volunteer Dashboard
+{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <h2 class="text-center">
+        Volunteer Dashboard
+    </h2>
+
+    <div class="card mt-4 p-4">
+
+        <h4>Welcome Volunteer</h4>
+
+        <p>Email: {{ email }}</p>
+
+        <p>
+            Status:
+            <span class="text-success">
+                Available
+            </span>
+        </p>
+
+        <h5 class="mt-3">
+            Assigned Tasks
+        </h5>
+
+        <ul>
+            <li>Food Distribution</li>
+            <li>Medical Support</li>
+            <li>Emergency Assistance</li>
+        </ul>
+
+    </div>
+
+</div>
+
+{% endblock %}
